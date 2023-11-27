@@ -1,0 +1,91 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.notes-app-header {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  cursor: default;
+}
+
+.refresh-btn {
+  width: 40px;
+  height: 40px;
+  background-image: url(./assets/refresh-cw-alt-2-svgrepo-com.svg);
+  background-size: 40px;
+
+  transition: transform .3s linear;
+}
+
+.refresh-btn:active {
+  scale: .85;
+}
+
+.refresh-btn:hover {
+  transform: rotate(90deg);
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.note-container {
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: default;
+
+  transition: all .2s ease-in-out;
+}
+
+.note-container:hover {
+  scale: 1.03;
+}
+
+.note-remover {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  color: gray;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.note-remover:hover {
+  color: #dc143c90;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submit-btn {
+  padding: 1rem .5rem;
+  background-color: #46a686;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #6cc1a5;
+}
