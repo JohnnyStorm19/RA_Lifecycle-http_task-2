@@ -1,1 +1,1 @@
-export const currentUrl = 'http://localhost:7070';
+export const currentUrl = 'https://ra-lifecycle-http-task-2-backend.onrender.com';
